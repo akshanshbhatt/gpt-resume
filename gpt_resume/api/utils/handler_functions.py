@@ -102,7 +102,7 @@ PROFESSIONAL_EXPERIENCE_FUNCTION = {
 
 COLLEGE_FUNCTION = {
     "type": "object",
-    "description": "Details of the college of the candidate.",
+    "description": "Details of the college of the candidate. If there are multiple colleges, select the most recent one. If the candidate has not attended any college, use 'No College' as the name of the college.",
     "properties": {
         "name": {
             "type": "string",
