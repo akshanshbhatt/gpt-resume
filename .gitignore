@@ -3,6 +3,8 @@ __pycache__/
 *.py[cod]
 *$py.class
 gpt-venv/
+temp_files/
+_temp/
 
 # C extensions
 *.so
