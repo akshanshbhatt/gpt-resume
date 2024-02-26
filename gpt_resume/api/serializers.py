@@ -1,31 +1,3 @@
-# from rest_framework import serializers
-# from api.models import Applicant, Project, ProfessionalExperience, College, PDFFile
-
-# class PDFFileSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = PDFFile
-#         fields = ('file',)
-
-# class ApplicantSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Applicant
-#         fields = '__all__'
-
-# class ProjectSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = Project
-#         fields = '__all__'
-
-# class ProfessionalExperienceSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = ProfessionalExperience
-#         fields = '__all__'
-
-# class CollegeSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = College
-#         fields = '__all__'
-
 from rest_framework import serializers
 from .models import Job, Applicant, College, Project, ProfessionalExperience
 
@@ -36,7 +8,7 @@ class JobSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Job
-        exclude = ['hidden']
+        fields = '__all__'
 
 
 class CollegeSerializer(serializers.ModelSerializer):

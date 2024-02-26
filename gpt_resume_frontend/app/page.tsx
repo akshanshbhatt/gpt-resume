@@ -1,9 +1,13 @@
-import { Button } from "@/components/ui/button"
+import ResumeUpload from "@/components/resume-upload"
+import { NavBar } from "@/components/nav-bar";
 
 export default function Home() {
   return (
-    <div>
-      <Button>Click me</Button>
+    <div style={{ paddingTop: '100px' }}>
+      <NavBar />
+      <div>
+        <ResumeUpload />
+      </div>
     </div>
   )
 }

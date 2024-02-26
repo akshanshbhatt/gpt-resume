@@ -1,6 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  /* Use the Inter font for all text in the body */
+  font-family: 'Inter', sans-serif;
+  padding-top: 70px;
+}
+
+.rounded-header {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
  
 @layer base {
   :root {
