@@ -36,7 +36,7 @@ $ python -m venv gpt_venv
 ```bash
 $ source gpt_venv/bin/activate
 ```
-If you get no errors, then you have just created and sourced a new virtual environment. To make sure, just run -
+If you get no errors, then you have just created and sourced into (activated) a new virtual environment. To make sure, just run -
 ```bash
 $ which python
 {base_path}/gpt-venv/bin/python
