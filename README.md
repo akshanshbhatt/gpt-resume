@@ -35,10 +35,11 @@ $ git clone https://github.com/akshanshbhatt/gpt-resume.git
 ### Step 2: Creating Python virtual environment
 After cloning the repository, move into the root directory of the project and run the following commands -
 ```bash
-$ python -m venv gpt_venv
+$ cd gpt-resume
+$ python -m venv gpt-venv
 ```
 ```bash
-$ source gpt_venv/bin/activate
+$ source gpt-venv/bin/activate
 ```
 If you get no errors, then you have just created and sourced into (activated) a new virtual environment. To make sure, just run -
 ```bash
@@ -81,7 +82,7 @@ $ python -c 'from django.core.management.utils import get_random_secret_key; pri
 to generate a random api key for your Django application. Both of these keys must be referenced in the `.env` file at the root of the project. Your `.env` file should look like this -
 ```py
 OAI_API_KEY = "<YOUR_KEY_HERE>"  # Your OpenAI API key. This is only shown once on the dashboard, so make sure you save it. Otherwise, you'll have to generate another one.
-DJANGO_SECRET_KEY = "<YOUR_KEY_HERE>"  # This is the random string that you just generated in running the command above.
+DJANGO_SECRET_KEY = "<YOUR_KEY_HERE>"  # This is the random string that you just generated in the terminal. PASTE IT AS IT IS FROM THE TERMINAL.
 ```
 
 ### Step 5: Installing the frontend dependencies
@@ -116,6 +117,8 @@ $ npm run dev
 to host our frontend app locally (in dev setup) on `port:3000` (`http://127.0.0.1:3000`).
 
 That's all. Now go ahead and upload as many resumes as you want for analysis!
+
+**Important Note:** Make sure that the backend is hosted on `port:8000`. The frontend will not be able to communicate with the backend if the port is different since these are hardcoded in the frontend code.
 
 ## Project Structure
 
